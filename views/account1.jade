@@ -1,0 +1,216 @@
+extends layout
+
+block content
+  h1 #{username}'s Account
+  p Welcome #{username}
+  table(border= '1', style ='width:100%')
+    tr
+      th #{editLvl}
+      th TA
+      th Start Date	          
+      th Deadline	
+      th Completion Date
+      th Comment	        
+    tr
+      td A1
+      td Chris
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text')
+      td
+        input(type ='text', readonly)
+    tr
+      td
+      td Lucas
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text')
+      td
+        input(type ='text', readonly)
+    tr
+      td
+      td Muhammad
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text')
+      td
+        input(type ='text', readonly)	               
+    tr
+      td
+      td Lee
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text')
+      td
+        input(type ='text', readonly)
+    tr
+      th 
+      th 
+      th 	          
+      th 
+      th
+      th 	        
+    tr
+      td A2
+      td Chris
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text')
+      td
+        input(type ='text', readonly)
+    tr
+      td
+      td Lucas
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text')
+      td
+        input(type ='text', readonly)
+    tr
+      td
+      td Muhammad
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text')
+      td
+        input(type ='text', readonly)	               
+    tr
+      td
+      td Lee
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text')
+      td
+        input(type ='text', readonly)
+    tr
+      th 
+      th 
+      th 	          
+      th 	
+      th 
+      th 	        
+    tr
+      td A3
+      td Chris
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text')
+      td
+        input(type ='text', readonly)
+    tr
+      td
+      td Lucas
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text')
+      td
+        input(type ='text', readonly)
+    tr
+      td
+      td Muhammad
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text')
+      td
+        input(type ='text', readonly)	               
+    tr
+      td
+      td Lee
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text')
+      td
+        input(type ='text', readonly)
+    tr
+      th 
+      th 
+      th 	          
+      th 	
+      th 
+      th 	        
+    tr
+      td A4
+      td Chris
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text')
+      td
+        input(type ='text', readonly)
+    tr
+      td
+      td Lucas
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text')
+      td
+        input(type ='text', readonly)
+    tr
+      td
+      td Muhammad
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text')
+      td
+        input(type ='text', readonly)	               
+    tr
+      td
+      td Lee
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text', readonly)
+      td
+        input(type ='text')
+      td
+        input(type ='text', readonly)	           
+  form(action="/logout", method="post")
+        button(type="submit") Logout
+  h2 Users logged in
+  ul
+    each val, user in loggedInUsers
+      li= user
